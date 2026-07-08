@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sarah | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init({ publicKey: "-kNwO0e2u39U0FeMl" });
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="logo">Sarah Isjerasik<span>.</span></div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#programming">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#hobbies">Hobbies</a></li>
+    <li><a href="#likes">I Like</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="theme-toggle" id="themeToggle" title="Toggle theme">🌙</button>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left reveal from-left">
+    <p class="hero-greeting">Welcome to my portfolio</p>
+    <h1 class="hero-name">Hi, I'm <span>Sarah</span></h1>
+    <p class="hero-role"><span id="typed"></span><span class="typed-cursor">|</span></p>
+    <p class="hero-desc">
+      A final-year IT student passionate about building smart, beautiful web applications
+      and AI-powered systems.
+    </p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary">View My Work</a>
+      <a href="#contact" class="btn-outline">Let's Talk</a>
+      <a href="resumesarahannisa.pdf" download class="cv-btn"><i class="fas fa-download"></i> Download CV</a>
+    </div>
+  </div>
+  <div class="hero-right reveal from-right">
+    <div class="hero-img-wrap">
+      <div class="hero-img-placeholder">
+        <!--<i class="fas fa-user"></i>-->
+        <img src="sarah67.jpg"> 
+        <!--<small>Your Photo Here</small>-->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILL TICKER -->
+<div class="skill-ticker" style="padding: 1.5rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div class="ticker-track">
+    <span class="ticker-item"><span>✦</span>Python</span>
+    <span class="ticker-item"><span>✦</span>Flask</span>
+    <span class="ticker-item"><span>✦</span>JavaScript</span>
+    <span class="ticker-item"><span>✦</span>HTML & CSS</span>
+    <span class="ticker-item"><span>✦</span>Flutter</span>
+    <span class="ticker-item"><span>✦</span>SQLite</span>
+    <span class="ticker-item"><span>✦</span>Machine Learning</span>
+    <span class="ticker-item"><span>✦</span>Sentence-BERT</span>
+    <span class="ticker-item"><span>✦</span>Git & GitHub</span>
+    <span class="ticker-item"><span>✦</span>Python</span>
+    <span class="ticker-item"><span>✦</span>Flask</span>
+    <span class="ticker-item"><span>✦</span>JavaScript</span>
+    <span class="ticker-item"><span>✦</span>HTML & CSS</span>
+    <span class="ticker-item"><span>✦</span>Flutter</span>
+    <span class="ticker-item"><span>✦</span>SQLite</span>
+    <span class="ticker-item"><span>✦</span>Machine Learning</span>
+    <span class="ticker-item"><span>✦</span>Sentence-BERT</span>
+    <span class="ticker-item"><span>✦</span>Git & GitHub</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="reveal from-left">
+      <h2 class="section-title">About <span>Me</span></h2>
+      <p class="section-subtitle">A little bit about who I am</p>
+      <div class="about-card">
+        <p>Hey! I'm Sarah, a final-year Software Engineering student at Universiti Kuala Lumpur (UNIKL) in Malaysia. I love turning ideas into real, working applications, from full-stack web apps to AI-powered systems.</p>
+        <p>My final year project, <strong style="color:var(--accent)">ChefGPT</strong>, is a smart recipe recommendation system that uses machine learning to suggest meals based on what ingredients you have at home. It supports text, voice, and image input!</p>
+        <p>When I'm not coding, you'll probably find me watching F1 races, playing video games, or hanging out with my friends.</p>
+      </div>
+    </div>
+    <div class="reveal from-right">
+      <div class="stats-row">
+        <div class="stat-item">
+          <div class="stat-num"><span class="count" data-target="3">0</span><span>+</span></div>
+          <div class="stat-label">Years Coding</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num"><span class="count" data-target="6">0</span><span>+</span></div>
+          <div class="stat-label">Projects Built</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num"><span class="count" data-target="7">0</span><span>+</span></div>
+          <div class="stat-label">Technologies</div>
+        </div>
+      </div>
+      <div style="margin-top: 2rem; background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 2rem;">
+        <h4 style="margin-bottom: 1.5rem; font-size: 1rem;">What I Do</h4>
+        <div style="display: flex; flex-direction: column; gap: 1.2rem;">
+          <div style="display:flex;align-items:center;gap:1rem;">
+            <i class="fas fa-globe" style="color:var(--accent);font-size:1.3rem;width:24px;"></i>
+            <div><div style="font-weight:600;font-size:0.9rem;">Full-Stack Web Development</div><div style="color:var(--muted);font-size:0.8rem;">Flask, HTML, CSS, JavaScript</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:1rem;">
+            <i class="fas fa-brain" style="color:var(--accent);font-size:1.3rem;width:24px;"></i>
+            <div><div style="font-weight:600;font-size:0.9rem;">Machine Learning & AI</div><div style="color:var(--muted);font-size:0.8rem;">Sentence-BERT, CLIP, Whisper</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:1rem;">
+            <i class="fas fa-mobile-alt" style="color:var(--accent);font-size:1.3rem;width:24px;"></i>
+            <div><div style="font-weight:600;font-size:0.9rem;">Mobile Development</div><div style="color:var(--muted);font-size:0.8rem;">Flutter</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:1rem;">
+            <i class="fas fa-database" style="color:var(--accent);font-size:1.3rem;width:24px;"></i>
+            <div><div style="font-weight:600;font-size:0.9rem;">Database Design</div><div style="color:var(--muted);font-size:0.8rem;">SQLite, ERD, System Design</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="education-wrap reveal">
+    <h2 class="section-title">Edu<span>cation</span></h2>
+    <p class="section-subtitle">My academic journey</p>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="tl-period">2024 — Present</div>
+        <div class="tl-school">Universiti Kuala Lumpur</div>
+        <div class="tl-degree">Bachelor of Information Technology (Hons) Software Engineering</div>
+        <div class="tl-badge">Final Year Student</div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="tl-period">2021 — 2023</div>
+        <div class="tl-school">Kolej Professional Mara</div>
+        <div class="tl-degree">Diploma in Computer Science</div>
+        <div class="tl-badge">Completed</div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="tl-period">2019 — 2021</div>
+        <div class="tl-school">SMK Bandar Tun Hussein Onn</div>
+        <div class="tl-degree">SPM — Computer Science Stream</div>
+        <div class="tl-badge">Completed</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMMING LANGUAGES -->
+<section id="programming">
+  <div style="width:100%">
+    <h2 class="section-title reveal">My <span>Skills</span></h2>
+    <p class="section-subtitle reveal">Technologies I work with</p>
+    <div class="skills-grid">
+      <div class="skill-card reveal"><i class="fab fa-python"></i><div class="skill-name">Python</div><div class="skill-level">Advanced</div><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+      <div class="skill-card reveal"><i class="fab fa-js-square"></i><div class="skill-name">JavaScript</div><div class="skill-level">Intermediate</div><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div>
+      <div class="skill-card reveal"><i class="fab fa-html5"></i><div class="skill-name">HTML5</div><div class="skill-level">Advanced</div><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+      <div class="skill-card reveal"><i class="fab fa-css3-alt"></i><div class="skill-name">CSS3</div><div class="skill-level">Advanced</div><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+      <div class="skill-card reveal"><i class="fas fa-server"></i><div class="skill-name">Flask</div><div class="skill-level">Advanced</div><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+      <div class="skill-card reveal"><i class="fas fa-mobile-alt"></i><div class="skill-name">Flutter</div><div class="skill-level">Intermediate</div><div class="skill-bar"><div class="skill-fill" data-width="65"></div></div></div>
+      <div class="skill-card reveal"><i class="fas fa-database"></i><div class="skill-name">SQLite</div><div class="skill-level">Intermediate</div><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div>
+      <div class="skill-card reveal"><i class="fas fa-brain"></i><div class="skill-name">ML / AI</div><div class="skill-level">Intermediate</div><div class="skill-bar"><div class="skill-fill" data-width="72"></div></div></div>
+      <div class="skill-card reveal"><i class="fab fa-git-alt"></i><div class="skill-name">Git</div><div class="skill-level">Intermediate</div><div class="skill-bar"><div class="skill-fill" data-width="68"></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div style="width:100%">
+    <h2 class="section-title reveal">Projects <span>and Experiences</span></h2>
+    <p class="section-subtitle reveal">Things I have built and experience throughout my studying times</p>
+    <div class="projects-grid">
+      <!-- Project 1: ChefGPT -->
+      <div class="project-card reveal">
+        <div class="project-carousel" id="carousel-1" data-index="0">
+          <img src="img/chefgpt/chefgpt1.png" alt="ChefGPT Image 1" class="active">
+          <img src="img/chefgpt/chefgpt2.png" alt="ChefGPT Image 2">
+          <img src="img/chefgpt/chefgpt3.png" alt="ChefGPT Image 3">
+          <button class="carousel-btn prev-btn" onclick="moveCarousel('carousel-1', -1)"><i class="fas fa-chevron-left"></i></button>
+          <button class="carousel-btn next-btn" onclick="moveCarousel('carousel-1', 1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Python</span><span class="tag">Flask</span><span class="tag">Flutter</span><span class="tag">SQLite</span><span class="tag">Hugging Face</span><span class="tag">ML</span>
+          </div>
+          <div class="project-title">ChefGPT</div>
+          <div class="project-desc">A full-stack recipe recommendation web and mobile app that accepts text, voice, and image input to identify ingredients and suggest personalized meals using machine learning.</div>
+          <div class="project-links"><a href="https://github.com/sarauh-codes/chefgpt-overall.git"><i class="fab fa-github"></i> GitHub</a><a href="#"><i class="fas fa-external-link-alt"></i> Live</a></div>
+        </div>
+      </div>
+      <!-- Project 2: Event Management System -->
+      <div class="project-card reveal">
+        <div class="project-carousel" id="carousel-3" data-index="0">
+          <img src="img/eventms/ems1.png" alt="Event Management System Image 1" class="active">
+          <img src="img/eventms/ems2.png" alt="Event Management System Image 2">
+          <img src="img/eventms/ems3.png" alt="Event Management System Image 3">
+          <button class="carousel-btn prev-btn" onclick="moveCarousel('carousel-3', -1)"><i class="fas fa-chevron-left"></i></button>
+          <button class="carousel-btn next-btn" onclick="moveCarousel('carousel-3', 1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">XAMPP</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+          </div>
+          <div class="project-title">Event Management System</div>
+          <div class="project-desc">Developed a full-stack web-based event management system supporting regular users and admins with full CRUD capabilities over rooms, bookings, and user accounts.</div>
+          <div class="project-links"><a href="#"><i class="fab fa-github"></i> GitHub</a></div>
+        </div>
+      </div>
+      <!-- Project 3: IOT Smart Parking -->
+      <div class="project-card reveal">
+        <div class="project-carousel" id="carousel-2" data-index="0">
+          <img src="img/iotsmartparking/iotsp1.jpg" alt="Smart Parking Image 1" class="active">
+          <img src="img/iotsmartparking/iotsp2.jpg" alt="Smart Parking Image 2">
+          <img src="img/iotsmartparking/iotsp3.jpg" alt="Smart Parking Image 3">
+          <button class="carousel-btn prev-btn" onclick="moveCarousel('carousel-2', -1)"><i class="fas fa-chevron-left"></i></button>
+          <button class="carousel-btn next-btn" onclick="moveCarousel('carousel-2', 1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Arduino Uno</span><span class="tag">IR Sensor</span><span class="tag">Hardware</span>
+          </div>
+          <div class="project-title">IOT Based Smart Parking System</div>
+          <div class="project-desc">Designed and built an IoT prototype that detects vehicle presence in parking slots using IR sensors connected to an Arduino Uno, displaying real-time availability via LEDs.</div>
+          <div class="project-links"><a href="#"><i class="fab fa-github"></i> GitHub</a><a href="#"><i class="fas fa-external-link-alt"></i> Live</a></div>
+        </div>
+      </div>
+      <!-- Project 4: IftarStreet E-Commerce -->
+      <div class="project-card reveal">
+        <div class="project-carousel" id="carousel-7" data-index="0">
+          <div class="carousel-placeholder active">
+            <i class="fas fa-shopping-cart"></i>
+            <span>IftarStreet E-Commerce</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">ASP.NET Web Forms</span><span class="tag">C#</span><span class="tag">MS SQL Server</span><span class="tag">ADO.NET</span><span class="tag">HTML/CSS</span><span class="tag">JavaScript</span>
+          </div>
+          <div class="project-title">IftarStreet E-Commerce Web Application</div>
+          <div class="project-desc">Built a full-stack e-commerce web application with secure admin and customer features. Integrated cart, checkout, and database management using ASP.NET, C#, and MS SQL Server.</div>
+        </div>
+      </div>
+      <!-- Project 5: Innovathon -->
+      <div class="project-card reveal">
+        <div class="project-carousel" id="carousel-6" data-index="0">
+          <img src="img/innovathon/photo_1_2026-06-17_12-51-55.jpg" alt="Innovathon Image 1" class="active">
+          <img src="img/innovathon/photo_2_2026-06-17_12-51-55.jpg" alt="Innovathon Image 2">
+          <img src="img/innovathon/photo_3_2026-06-17_12-51-55.jpg" alt="Innovathon Image 3">
+          <button class="carousel-btn prev-btn" onclick="moveCarousel('carousel-6', -1)"><i class="fas fa-chevron-left"></i></button>
+          <button class="carousel-btn next-btn" onclick="moveCarousel('carousel-6', 1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Innovathon Teknofest Legacy — Pitching Competition</div>
+          <div class="project-desc">Joined Innovathon Teknofest Legacy, a pitching competition that featured the 10 best innovation projects from a total of 50, to present and validate ideas for commercialization with real industry players.</div>
+        </div>
+      </div>
+      <!-- Project 6: Internship -->
+      <div class="project-card reveal">
+        <div class="project-carousel" id="carousel-5" data-index="0">
+          <img src="img/internship/intern1.jpg" alt="Internship Image 1" class="active">
+          <img src="img/internship/intern2.jpg" alt="Internship Image 2">
+          <img src="img/internship/intern3.jpg" alt="Internship Image 3">
+          <img src="img/internship/intern4.jpg" alt="Internship Image 4">
+          <img src="img/internship/intern5.jpg" alt="Internship Image 5">
+          <img src="img/internship/intern6.jpg" alt="Internship Image 6">
+          <img src="img/internship/intern7.jpg" alt="Internship Image 7">
+          <img src="img/internship/intern8.jpg" alt="Internship Image 8">
+          <img src="img/internship/intern9.jpg" alt="Internship Image 9">
+          <button class="carousel-btn prev-btn" onclick="moveCarousel('carousel-5', -1)"><i class="fas fa-chevron-left"></i></button>
+          <button class="carousel-btn next-btn" onclick="moveCarousel('carousel-5', 1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Internship - UDA Holdings Sdn Bhd</div>
+          <div class="project-desc">Completed an IT internship at UDA Holdings Sdn Bhd, where I gained hands-on experience in service management, documentation handling, asset coordination, and supporting daily IT operations in a corporate environment.</div>
+        </div>
+      </div>
+      <!-- Project 7: CSR -->
+      <div class="project-card reveal">
+        <div class="project-carousel" id="carousel-4" data-index="0">
+          <img src="img/csr/csr1.jpg" alt="CSR Image 1" class="active">
+          <img src="img/csr/csr2.jpg" alt="CSR Image 2">
+          <img src="img/csr/csr3.jpg" alt="CSR Image 3">
+          <img src="img/csr/csr4.jpg" alt="CSR Image 4">
+          <img src="img/csr/csr5.jpg" alt="CSR Image 5">
+          <button class="carousel-btn prev-btn" onclick="moveCarousel('carousel-4', -1)"><i class="fas fa-chevron-left"></i></button>
+          <button class="carousel-btn next-btn" onclick="moveCarousel('carousel-4', 1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="project-body">
+          <div class="project-title">CSR Activities - Rumah Bakti Nur Ain</div>
+          <div class="project-desc">Participated in a community service program at Rumah Bakti Nur Ain, where students engaged with the children through meaningful activities, group games, and donations to foster compassion, teamwork, and social awareness.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOBBIES -->
+<section id="hobbies" style="background: var(--bg2);">
+  <div style="width:100%">
+    <h2 class="section-title reveal">My <span>Hobbies</span></h2>
+    <p class="section-subtitle reveal">What I do for fun</p>
+    <div class="hobbies-grid">
+      <!-- Hobby 1: Formula 1 -->
+      <div class="hobby-card reveal">
+        <div class="hobby-carousel" id="hcarousel-1" data-index="0">
+          <img src="img/hobbies/f1/f11.jpg" alt="Formula 1 Image 1" class="active">
+          <img src="img/hobbies/f1/f12.jpg" alt="Formula 1 Image 2">
+          <img src="img/hobbies/f1/f13.jpg" alt="Formula 1 Image 3">
+          <button class="hobby-carousel-btn hobby-prev-btn" onclick="moveCarousel('hcarousel-1', -1)"><i class="fas fa-chevron-left"></i></button>
+          <button class="hobby-carousel-btn hobby-next-btn" onclick="moveCarousel('hcarousel-1', 1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="hobby-body">
+          <div class="hobby-name">Formula 1</div>
+          <div class="hobby-tooltip">Ferrari or McLaren? 🤔</div>
+        </div>
+      </div>
+      <!-- Hobby 2: Coding -->
+      <div class="hobby-card reveal">
+        <div class="hobby-carousel" id="hcarousel-2" data-index="0">
+          <div class="hobby-carousel-placeholder active">
+            <span class="hobby-carousel-emoji">💻</span>
+          </div>
+        </div>
+        <div class="hobby-body">
+          <div class="hobby-name">Coding</div>
+          <div class="hobby-tooltip">Late night debugging hits different 🌙</div>
+        </div>
+      </div>
+      <!-- Hobby 3: Travel -->
+      <div class="hobby-card reveal">
+        <div class="hobby-carousel" id="hcarousel-3" data-index="0">
+          <img src="img/hobbies/travel/travel1.jpg" alt="Travel Image 1" class="active">
+          <img src="img/hobbies/travel/travel2.jpg" alt="Travel Image 2">
+          <img src="img/hobbies/travel/travel3.jpg" alt="Travel Image 3">
+          <img src="img/hobbies/travel/travel4.jpg" alt="Travel Image 4">
+          <img src="img/hobbies/travel/travel5.jpg" alt="Travel Image 5">
+          <img src="img/hobbies/travel/travel6.jpg" alt="Travel Image 6">
+          <img src="img/hobbies/travel/travel7.jpg" alt="Travel Image 7">
+          <button class="hobby-carousel-btn hobby-prev-btn" onclick="moveCarousel('hcarousel-3', -1)"><i class="fas fa-chevron-left"></i></button>
+          <button class="hobby-carousel-btn hobby-next-btn" onclick="moveCarousel('hcarousel-3', 1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="hobby-body">
+          <div class="hobby-name">Travel</div>
+          <div class="hobby-tooltip">Seoul was amazing 🇰🇷</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LUCY GALLERY -->
+<section id="likes">
+  <div style="width:100%; text-align: center;">
+    <h2 class="section-title reveal">I like <span>cat(s)</span></h2>
+    <p class="section-subtitle reveal" style="margin-bottom: 2rem;">Thats it about me. I then dedicate this section for my cat Lucy :)</p>
+    <div class="lucy-gallery reveal">
+      <button id="prevLucy" class="gallery-btn"><i class="fas fa-chevron-left"></i></button>
+      <div class="gallery-img-container">
+        <img id="lucyImg" src="img/lucy/lucy1.jpg" alt="Lucy the cat">
+      </div>
+      <button id="nextLucy" class="gallery-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="background: var(--bg2);">
+  <div class="contact-grid">
+    <div class="reveal from-left">
+      <h2 class="section-title">Contact <span>Me</span></h2>
+      <p class="section-subtitle">Let's get in touch!</p>
+      <div class="contact-info">
+        <p>Whether you want to collaborate, have a question, or just want to say hi — my inbox is always open! 💌</p>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-detail"><span>Email</span><a href="mailto:sarah.annisa@s.unikl.edu.my">sarah.annisa@s.unikl.edu.my</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="contact-detail"><span>Location</span><p>Cheras, Selangor, Malaysia</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+          <div class="contact-detail"><span>LinkedIn</span><a href="https://www.linkedin.com/in/sarah-annisa-5a46613b6" target="_blank" rel="noopener noreferrer">linkedin.com/in/sarah-annisa-5a46613b6</a></div>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sarah-annisa-5a46613b6" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-linkedin"></i></a>
+        <a href="sorry.html" class="social-btn"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="reveal from-right">
+      <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+        <div class="form-group"><label>Your Name</label><input type="text" name="from_name" placeholder="Enter your name" required /></div>
+        <div class="form-group"><label>Email</label><input type="email" name="from_email" placeholder="Enter your email" required /></div>
+        <div class="form-group"><label>Subject</label><input type="text" name="subject" placeholder="What's it about?" required /></div>
+        <div class="form-group"><label>Message</label><textarea name="message" placeholder="Write your message here..." required></textarea></div>
+        <button type="submit" class="btn-primary" id="submitBtn" style="align-self:flex-start">Send Message <i class="fas fa-paper-plane" style="margin-left:0.5rem"></i></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Designed & Built with ❤️ by <span>Sarah</span> • © 2026 All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+<a href="resumesarahannisa.pdf" download class="cv-float"><i class="fas fa-file-arrow-down"></i> My CV</a>
+</body>
+</html>
